@@ -19,7 +19,7 @@ Na vašem analytickém oddělení nezávislé společnosti, která se zabývá �
 ### VÝSTUP PROJEKTU:
 #### Zkoumané období použito pro tento projekt je 2016 - 2018.
 
-Mým výstupem z projektu jsou 2 nové tabulky, které slouží jako zdrojová data pro projekt a jedno na ně navázané view, které bylo použito u otázek 3 a 4:
+Mým výstupem z projektu jsou 2 nové tabulky, které slouží jako zdrojová data pro projekt a jedno na ně navázané view, které bylo použito u otázek 3, 4 a 5:
 
 1) t_radomil_faksa_project_SQL_primary_final = tabulka s informacemi o průměrných mzdách a průměrných cenách potravin za zkoumané období
 2) t_radomil_faksa_project_SQL_secondary_final = tabulka s dodatečnými daty o dalších evropských státech
