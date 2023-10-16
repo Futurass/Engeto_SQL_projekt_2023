@@ -1,6 +1,7 @@
 # Engeto_SQL_projekt_2023
 
 Jméno studenta: Radomil Faksa
+
 Kurz: Datová akademie ENGETO
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -15,8 +16,8 @@ Výzkumné otázky:
 5) Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo násdujícím roce výraznějším růstem?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# VÝSTUP PROJEKTU:
-# Zkoumané období použito pro tento projekt je 2016 - 2018.
+## VÝSTUP PROJEKTU:
+Zkoumané období použito pro tento projekt je 2016 - 2018.
 
 Mým výstupem z projektu jsou 2 nové tabulky, které slouží jako zdrojová data pro projekt a jedno na ně navázané view, které bylo použito u otázek 3 a 4:
 
