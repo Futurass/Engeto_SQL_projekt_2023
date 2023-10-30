@@ -20,4 +20,5 @@ FROM average_payroll_CZK cur, average_payroll_CZK prev
 WHERE 1=1
 	AND cur.industry_branch_name = prev.industry_branch_name
 	AND cur.`year` = prev.`year` + 1
+ORDER BY payroll_growth
 ;
