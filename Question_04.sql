@@ -5,9 +5,9 @@
 -- meziroční procentuální růst potravin o více jak 10% (využití view z otázky č.3)
 
 SELECT *
-FROM v_radomil_faksa_project_SQL v
+FROM v_radomil_faksa_project_SQL_prices v
 WHERE v.price_percentil_difference > 10
-ORDER BY v.price_percentil_difference DESC
+ORDER BY v.commodity_name, v.price_percentil_difference DESC
 ;
 
 
