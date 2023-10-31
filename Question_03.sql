@@ -2,7 +2,7 @@
  * VÝZKUMNÁ OTÁZKA Č. 3 - Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuální meziroční nárůst)?
  */
 
-CREATE VIEW IF NOT EXISTS v_radomil_faksa_project_SQL AS 
+CREATE VIEW IF NOT EXISTS v_radomil_faksa_project_SQL_prices AS 
 WITH commodity_prices AS (
 	SELECT
 		t.`year`,
@@ -25,31 +25,21 @@ WHERE 1=1
 	AND a.`year` = b.`year` - 1
 ;
 
-SELECT -- SELECT za pozorované období 2016 - 2018
+SELECT -- SELECT pro celkový procentuální rozdíl cen za pozorované období 2006 - 2018
 	v.commodity_name,
-	sum(v.price_percentil_difference) AS price_percentil_difference_between_2016_2018
-FROM v_radomil_faksa_project_SQL v
+	sum(v.price_percentil_difference) AS price_percentil_difference_between_2006_2018
+FROM v_radomil_faksa_project_SQL_prices v
 GROUP BY v.commodity_name
-ORDER BY price_percentil_difference_between_2016_2018
+ORDER BY price_percentil_difference_between_2006_2018
 ;
 
 
-SELECT -- SELECT za pozorované období 2016 - 2017
+SELECT -- SELECT pro meziroční percentil za jeden rok
 	v.commodity_name,
-	sum(v.price_percentil_difference) AS price_percentil_difference_between_2016_2017
-FROM v_radomil_faksa_project_SQL v
+	sum(v.price_percentil_difference) AS price_percentil_difference_per_year
+FROM v_radomil_faksa_project_SQL_prices v
 WHERE 1=1
-	AND v.year_A = 2016
+	AND v.year_A = 2006 -- uvést požadovaný rok (příklad: s uvedením roku 2006 se porovnává rozdíl oproti roku 2007)
 GROUP BY v.commodity_name
-ORDER BY price_percentil_difference_between_2016_2017
-;
-
-SELECT -- SELECT za pozorované období 2017 - 2018
-	v.commodity_name,
-	sum(v.price_percentil_difference) AS price_percentil_difference_between_2017_2018
-FROM v_radomil_faksa_project_SQL v
-WHERE 1=1
-	AND v.year_A = 2017
-GROUP BY v.commodity_name
-ORDER BY price_percentil_difference_between_2017_2018
+ORDER BY price_percentil_difference_per_year
 ;
