@@ -17,18 +17,18 @@ Na vašem analytickém oddělení nezávislé společnosti, která se zabývá �
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### VÝSTUP PROJEKTU:
-#### Zkoumané období použito pro tento projekt je 2016 - 2018.
+#### Zkoumané období použito pro tento projekt je 2006 - 2018.
 
-Mým výstupem z projektu jsou 2 nové tabulky, které slouží jako zdrojová data pro projekt a jedno na ně navázané view, které bylo použito u otázek 3, 4 a 5:
+Mým výstupem z projektu jsou 2 nové tabulky, které slouží jako zdrojová data pro projekt a 2 na ně navázaná view, která byla použita u otázek 3, 4 a 5:
 
 1) t_radomil_faksa_project_SQL_primary_final = tabulka s informacemi o průměrných mzdách a průměrných cenách potravin za zkoumané období
 2) t_radomil_faksa_project_SQL_secondary_final = tabulka s dodatečnými daty o dalších evropských státech
-3) v_radomil_faksa_project_SQL = pomocné view pro porovnání cen potravin z tabulky t_radomil_faksa_project_SQL_primary_final
-
+3) v_radomil_faksa_project_SQL_prices = pomocné view pro porovnání cen potravin
+4) v_radomil_faksa_project_SQL_payrolls = pomocné view pro porovnání průměrů mezd
 
 #### Odpovědi na výzkumné otázky:
-1) Ano, všude za pozorované období 2016 - 2018 mzdy rostou.
-2) V prvním srovnatelném období (2016) by bylo možné za všechny průměrné mzdy koupit celkem cca 30 728 litrů mléka a cca 25 257 kg chleba. Pro poslední období (2018) by to bylo cca 31 726 litrů mléka a cca 25 940 kg chleba.
-3) Nejpomaleji zdražuje za pozorované období 2016 - 2018 cukr krystalový, který od roku 2016 do 2018 ve výsledku zlevnil o cca 14,84 %. Pokud bychom šli ale po jednotlivých rocích, tak za 2016 - 2017 je "vítězem" mrkev (-23,41 %) a za 2017 - 2018 je to onen cukr (- 26,73 %)
-4) Z použitých dat lze zjistit, že meziroční růst mezd o více jak 10 % byl pouze u dvou zaměstnání, a to v různých letech: "Ubytování, stravování a pohostinství" v letech 2016 - 2017 (růst o 10,16 %); "Kulturní, zábavní a rekreační činnosti" v letech 2017 - 2018 (růst o 10,14 %). Co se týká potravin, tak zde byl rozptyl meziročních cen dynamičtější. Růst o více jak 10 % byl zaznamenán v letech 2016 - 2017 u 5 potravin (Máslo = 25 % / Eidamská cihla = 22,22 % / Vejce slepičí čerstvá = 21,15 % / Cukr krystalový = 11,89 % / Pomeranče = 10,25 %) a v letech 2017 - 2018 pouze u jedné (Mrkev = 33,05 %)
-5) Z pozorovaných dat za uvedené období se nepodařilo jednoznačně prokázat výrazný dopad růstu HDP na mzdy a ceny potravin. Výše růstu HDP byla pro období 2016 - 2017 ve výši cca 5 % a pro 2017 - 2018 ve výši cca 3 %. Všechny mzdy v pozorovaném období rostly (některé více a některé méně). Pro období 2016 - 2017 zachycen růst mezd od cca 4 % do cca 10 %, pro období 2017 - 2018 to bylo od cca 5 % do cca 10 %. Co se týká cen potravin, tak zde je rozptyl mnohem markantnější (některé zdražují a některé naopak zlevňují -> pro 2016 - 2017 je zachycen nejvyšší růst potraviny o cca 25 % a naopak největší zlevnění o cca 23 %; pro období 2017 - 2018 byl zachycen nejvyšší růst o cca 33 % a naopak největší zlevnění o cca 27 %.
+1) Ne, za pozorované období 2006 - 2018 se vyskytují obory, u kterých je v některých letech zachycen pokles.
+2) V prvním srovnatelném období (2006) by bylo možné v průměru koupit celkem cca 1 466 litrů mléka a cca 1 313 kg chleba. Pro poslední období (2018) by to bylo cca 1 670 litrů mléka a cca 1 365 kg chleba.
+3) Nejpomaleji zdražují za pozorované období 2006 - 2018 Rajská jablka červená kulatá a nejvíce Těstoviny vaječné.
+4) Z použitých dat lze zjistit, že meziroční růst cen potravin o více jak 10 % byl zachycen od roku 2006 do 2018 celkem 45-krát, a to v různých rocích i u různých potravin. Co se týká mezd, tak růst větší než 10% byl zachycen celkem 5-krát.
+5) Za pozorované období HDP v ČR každým rokem rostlo (v rozptylu od cca 2 % do cca 5,5%) jen s rozdílem 3 let, kde je evidován pokles/stagnace: 2008 (cca - 4,5 %) , 2011 (- cca 1%) a 2012 (cca 0%). Co se týká vlivu změn HDP na mzdy/ceny, tak v roce 2008/2009 bychom mohli hovořit o potenciální reflexi, jelikož ceny potravin v průměru klesly o 8,21 %. Pokud ale porovnáme roky 2011 - 2013, kdy HDP klesalo/stagnovalo, tak ceny potravin jsou zde ale v růstu o 5,9 % (2011 - 2012) a 4,65 % (2012 - 2013). Následně ceny ročně po dobu 3 let v průměru klesají o cca 1 - 1,5%, ale HDP tyto roky naopak roste. Co se týká růstu mezd, tak ty v průměru rostou vždy (2006 - 2008 každoročně růst o cca 6,5 % || 2008 - 2015 každoročně růst cca 2 - 2,5 % s výjimkou roku 2012 - 2013, kdy byl celkově jediný pokles o cca 1 % || 2015 - 2018 každoročně růst o cca 4 - 7 % ). Z pozorovaných dat se za uvedené období nepodařilo jednoznačně prokázat výrazný dopad růstu HDP na mzdy a ceny potravin.
